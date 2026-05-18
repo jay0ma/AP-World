@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDD + Alibaba Globalization Presentation</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-2: #22d3ee;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 55%);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+
+    .deck {
+      width: min(1000px, 95vw);
+      min-height: min(620px, 88vh);
+      background: linear-gradient(180deg, #0b1220 0%, var(--card) 100%);
+      border: 1px solid #334155;
+      border-radius: 18px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .slide {
+      display: none;
+      padding: clamp(24px, 4vw, 44px);
+      flex: 1;
+    }
+    .slide.active { display: block; }
+
+    h1, h2, h3 { margin: 0 0 14px; line-height: 1.2; }
+    h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); }
+    h2 { font-size: clamp(1.5rem, 3vw, 2rem); color: #f8fafc; }
+    h3 { font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--accent-2); margin-top: 18px; }
+    p, li { font-size: clamp(1rem, 1.7vw, 1.2rem); line-height: 1.55; }
+    ul { margin-top: 0; padding-left: 1.2rem; }
+    .muted { color: var(--muted); }
+    .highlight { color: var(--accent); font-weight: 700; }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-top: 1px solid #334155;
+      background: rgba(2, 6, 23, 0.7);
+    }
+    .nav {
+      display: flex;
+      gap: 10px;
+    }
+    button {
+      border: 1px solid #475569;
+      background: #0f172a;
+      color: var(--text);
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+    button:hover { border-color: var(--accent); }
+    .badge {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .big-question {
+      font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main class="deck" role="region" aria-label="Slide deck">
+    <section class="slide active">
+      <h1>Globalization &amp; Platform Power</h1>
+      <h2>PDD + Alibaba</h2>
+      <p>Focus: Cross-border e-commerce and digital trade</p>
+      <p class="muted">Visual idea: world map with major Temu and Alibaba trade routes.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Who Are These Companies?</h2>
+      <ul>
+        <li><span class="highlight">PDD Holdings</span> and <span class="highlight">Alibaba Group</span> are major global e-commerce groups.</li>
+        <li>They run online marketplaces, logistics systems, and data-driven retail tools.</li>
+        <li>Temu has expanded into <span class="highlight">nearly 100 markets</span>, while Alibaba runs large domestic and international platforms.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>What Do They Prioritize?</h2>
+      <h3>Big Strategy Goals</h3>
+      <ul>
+        <li>Grow global influence while staying efficient</li>
+        <li>Compete with large rivals like Amazon</li>
+        <li>Increase value (better price-to-performance for shoppers)</li>
+        <li>Offer low-cost, high-volume products with dependable delivery</li>
+      </ul>
+      <h3>Daily Operating Goals</h3>
+      <ul>
+        <li>Support merchant growth and product variety</li>
+        <li>Keep supply chains fast and stable</li>
+        <li>Build consumer trust and meet rules</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Globalization Force #1: Trade Rules</h2>
+      <ul>
+        <li>Today, success is not only about the lowest price.</li>
+        <li>Companies must manage tariffs, customs checks, and product-safety paperwork.</li>
+        <li><span class="highlight">Evidence:</span> The EU is moving toward stricter duties and compliance for low-value cross-border parcels.</li>
+      </ul>
+      <p><strong>Why this matters:</strong> Strong compliance systems can become a competitive advantage.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Globalization Force #2: Platform Regulation</h2>
+      <ul>
+        <li>Governments are paying closer attention to platform behavior.</li>
+        <li>Expected standards include clear pricing, fair treatment of merchants, and stronger accountability.</li>
+        <li><span class="highlight">Evidence:</span> China has proposed stronger platform-governance rules focused on transparency and fairness.</li>
+      </ul>
+      <p><strong>Why this matters:</strong> Regulatory trust affects market access and long-term brand reputation.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Globalization Force #3: Global Competition</h2>
+      <ul>
+        <li>Competition is rising in North America, Europe, and emerging markets.</li>
+        <li>Main rivals include Amazon and regional e-commerce firms.</li>
+        <li>Possible strengths of PDD + Alibaba: cost efficiency, fast product turnover, and data-informed demand matching.</li>
+      </ul>
+      <p><strong>Risk:</strong> Geopolitical tensions can quickly raise costs and change market-access rules.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Overall Position</h2>
+      <p><strong>Main claim:</strong> In today’s global market, winning requires a mix of <span class="highlight">price advantage + strong compliance + platform accountability</span>.</p>
+      <ul>
+        <li>Keep value pricing and wide product selection</li>
+        <li>Invest in compliance and safety systems</li>
+        <li>Improve logistics and localization by region</li>
+        <li>Compete on trust and execution, not only price</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Class Discussion</h2>
+      <p class="big-question">If cross-border rules get stricter each year, what matters most for long-term success?</p>
+      <ul>
+        <li>A) Lowest prices</li>
+        <li>B) Fastest shipping</li>
+        <li>C) Strongest compliance and trust systems</li>
+        <li>D) Best balance of all three</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <div class="badge" id="slideCounter">Slide 1 / 8</div>
+      <div class="nav">
+        <button type="button" id="prevBtn" aria-label="Previous slide">← Previous</button>
+        <button type="button" id="nextBtn" aria-label="Next slide">Next →</button>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const slideCounter = document.getElementById('slideCounter');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let index = 0;
+
+    function render() {
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+      slideCounter.textContent = `Slide ${index + 1} / ${slides.length}`;
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index === slides.length - 1;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (index > 0) index -= 1;
+      render();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (index < slides.length - 1) index += 1;
+      render();
+    });
+
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight' || event.key === ' ') {
+        if (index < slides.length - 1) index += 1;
+      } else if (event.key === 'ArrowLeft') {
+        if (index > 0) index -= 1;
+      } else {
+        return;
+      }
+      render();
+    });
+
+    render();
+  </script>
+</body>
+</html>
