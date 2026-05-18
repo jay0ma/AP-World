@@ -92,7 +92,7 @@
   </style>
 </head>
 <body>
-  <main class="deck" role="region" aria-label="Slide deck">
+  <main class="deck" role="region" aria-label="Slide deck" tabindex="0">
     <section class="slide active">
       <h1>Globalization &amp; Platform Power</h1>
       <h2>PDD + Alibaba</h2>
@@ -188,6 +188,7 @@
   </main>
 
   <script>
+    const deck = document.querySelector('.deck');
     const slides = Array.from(document.querySelectorAll('.slide'));
     const slideCounter = document.getElementById('slideCounter');
     const prevBtn = document.getElementById('prevBtn');
@@ -213,10 +214,12 @@
       render();
     });
 
-    window.addEventListener('keydown', (event) => {
+    deck.addEventListener('keydown', (event) => {
       if (event.key === 'ArrowRight') {
+        event.preventDefault();
         if (index < slides.length - 1) index += 1;
       } else if (event.key === 'ArrowLeft') {
+        event.preventDefault();
         if (index > 0) index -= 1;
       } else {
         return;
